@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,45 @@
         // input = Number(input);
 
         // alert(typeof (input) + ' : ' + input );
-        alert(!0);
-        
+        // alert('경고창 내용!!') 팝업, 경고창 생성
+        // var output = prompt('입력하시오', '입력 내용') 
+        // 입력한 내용 "string" 이 output에 저장된다.  
+        // var output2 = confirm('ox퀴즈') 확인-true, 취소-false 값을 선택에 따라 저장한다.
+
+        // typeof('text') - ()안의 자료형을 판별한다. String, Number, Boolean(문자, 숫자, 불)
+        // typeof(2222)
+        // Number() - 입력한 자료를 숫자형으로 변환한다.
+        // String() - 입력한 자료를 문자형으로 변환한다.
+        // Boolean() - 입력한 자료를 불형으로 변환한다.
+        //alert("222" == 222);
+
+        // for(var i =0; i<3; i++){
+        //     setTimeout(() => {
+        //         alert(i);
+        //     }, 1000 * i);
+        // }
+        for (var i = 0; i < 3; i++) {
+            ((i) => {
+                setTimeout(() => {
+                    alert(i);
+                }, 1000 * i);
+            })(i);
+        }
+        document.write(new Date().getHours(), ' : ', new Date().getMinutes());
+        var date = new Date();
+        var hour = date.getHours();
+        if (hour < 12) {
+            console.log("오전");
+        }
+    </script>
+    <script>
+
     </script>
 </head>
+
 <body>
     <p>깃허브 연습, 시험용 문서입니다.</p>
-    
+
 </body>
+
 </html>
