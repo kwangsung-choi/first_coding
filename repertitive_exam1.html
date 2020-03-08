@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*1, 2번 문제*/
+        var output = prompt('입력해주세요', '');
+        if (output == '' || output == '0') {
+            output = 'ddsfdewgw';
+        }
+        if (output.indexOf('안녕') >= 0) {
+            alert('안녕하세요?');
+        } else if (0 <= output.indexOf('잘자') || 0 <= output.indexOf('잘 자')) {
+            alert('안녕히 주무세요')
+        } else {
+            alert('인사를 안 하다니.')
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
