@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var output = '';
+        var line = 14;
+        for (var i = 1; i <= line; i++) {
+            for (var j = line; j > i; j--) {
+                /*' ' 가 13, 12, 11개씩 감소하면서 찍히기*/
+                output = output + ' ';
+            }
+            for (var s = 0; s < i * 2 - 1; s++) { // 1회, 3회, 5회 반복
+                output = output + '*';
+            }
+            output += '\n';
+        }
+        // alert(output);
+        console.log(output);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
