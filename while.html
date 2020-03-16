@@ -6,7 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-
+        var value = 0;
+        var startTime = new Date().getTime();
+        /* startTime에는 실행 시의 시간, new Date().getTime에는 반복문이 반복 될 때의 시간을 불러온다.
+         */
+        while ((new Date()).getTime() < startTime + 1000) {
+            value++;
+        }
+        alert(value);
+        /*배열 내부의 50미만인 값을 출력   -통계 분포등에 사용-*/
+        var array = [10, 20, 30, 40, 50, 60];
+        var i = 0;
+        while (array[i] < 50) {
+            alert(array[i]);
+            i++;
+        }
     </script>
 </head>
 
