@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var array = [52, 273, 102, 57, 103, 31, 2];
+        var i = 0;
+        var j = 1;
+        while (j <= 6) {
+            /*배열내 최대값 구하기*/
+            if (array[i] >= array[j]) {
+                j++;
+            } else if (array[i] < array[j]) {
+                i = j;
+                j = j + 1;
+            }
+        }
+        alert('최대값' + array[i]);
+
+
+        /*배열내 최소값 구하기*/
+        var i = 0;
+        var j = 1;
+        while (j <= 6) {
+            if (array[i] <= array[j]) {
+                j++;
+            } else if (array[i] > array[j]) {
+                i = j;
+                j++;
+            }
+        }
+        alert('최소값' + array[i]);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

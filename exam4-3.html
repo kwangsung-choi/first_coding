@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*1~100 곱하기*/
+        var sum = 1;
+        var i = 2;
+        while (i <= 100) {
+            sum = sum * i;
+            i++;
+            console.log(sum);
+        }
+        /*add부터 last까지 곱하기 */
+        var add = Number(prompt('시작 값', ''));
+        var last = Number(prompt('종료 값', ''));
+        var i = add + 1;
+        while (i <= last) {
+            add = add * i;
+            i++;
+        }
+        alert(add);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
