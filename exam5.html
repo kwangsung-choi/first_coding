@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // function test(a, b, c) {
+      //     console.log(a);
+      //     console.log(a * b);
+      //     console.log(a * b * c);
+      // }
+      // test(10, 100);
+
+      //2-1
+      function power(x, y) {
+        if (arguments.length == 1) {
+          return x * x;
+        } else if (arguments.length == 2) {
+          var output = 1;
+          for (var i = 0; i < y; i++) {
+            output *= x;
+          }
+          return output;
+        } else {
+          alert("잘못된 입력입니다.");
+        }
+      }
+      alert(power(10, 1));
+
+      //2-2
+      function multiply() {
+        var output = 1;
+        for (var i = 0; i < arguments.length; i++) {
+          output *= arguments[i];
+        }
+        return output;
+      }
+      alert(multiply(1, 2, 3, 10, 9, 6));
+
+      //NaN == NaN 서로 비교 했을때 항상 false가 되므로 string으로 문자로 바꿔서 비교하였다.
+      var output2 = Number(prompt("입력해 주세요", "11"));
+      if (isNaN(output2) || String(output2) === 0) {
+        alert("false");
+      } else {
+        alert("true");
+      }
+
+      //해답
+
+      function isNumber(input) {
+        if (isNaN(Number(input))) {
+          return false;
+        } else {
+          return true;
+        }
+      }
+      alert(isNumber("123456789"));
+      alert(isNumber("1a2s3c"));
+
+      var array = [1, 2, 3, 4, 5];
+      array.splice(2, 1); //[1,2,4,5];
+      array.push(1, 2, 3); //[1,2,4,5,1,2,3]
+      array[3] = 100; //[1,2,4,100,1,2,3]
+      alert(array);
+      var abc = Array(10);
+      abc.push(1, 2, 3, 4);
+      alert(abc);
+    </script>
+  </head>
+
+  <body></body>
+</html>

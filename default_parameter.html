@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //기본 매개변수
+        function test(a, b, c) {
+            //매개변수 초기화 방법
+            //1
+            if (typeof (a) == "undefined") {
+                a = 10;
+            }
+            //2
+            if (!b) {
+                b = 20;
+            }
+            //3  or 연산자는  a || b 의 a가 false면 b(30)를 확인하기 위해 실행한다.
+            c = c || 30;
+            alert(a + b + c);
+        }
+        test();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

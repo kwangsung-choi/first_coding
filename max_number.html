@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script>
+    var 함수 = function () {
+      alert("함수 A");
+    };
+
+    function 함수() {
+      alert("함수 B");
+    }
+    함수();
+
+    function callTenTimes(callback) {
+      for (var i = 0; i < 5; i++) {
+        callback;
+        return;
+      }
+    }
+    var callback = function () {
+      alert("함수 호출");
+    };
+
+    var callback2 = function () {
+      alert("함수 호출2");
+    };
+
+    // setTimeout(callback, 3000);
+
+    for (var i = 0; i < 5; i++) {
+      ((i) => {
+        setTimeout(() => {
+          alert(i);
+        }, 1000 * i);
+      })(i);
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

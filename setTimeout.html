@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //내장 함수
+      //타이머함수
+      var mecro = function () {
+        alert("111111");
+      };
+      var id2 = setTimeout(mecro, 2000); //함수 자료형의 값을 넣는 것이니 mecro뒤에()를 붙이면 안된다.
+      clearTimeout(id2);
+
+      var id3 = setInterval(function () {
+        alert("1111");
+      }, 3000);
+      clearInterval(id3);
+      //인코딩, 디코딩
+      var enco = encodeURIComponent("초콜렛");
+      alert(enco);
+      alert(decodeURIComponent(enco));
+
+      //코드실행 함수
+      eval("alert('안녕하세요')");
+
+      //숫자 확인
+      var number2 = -1 / 0;
+      alert("number" + " : " + isFinite(number2));
+      alert(isNaN(NaN));
+      //숫자 변환 함수 1.5$ -> 1.5 or 1
+      alert(parseFloat("52.237e10"));
+      alert(parseInt("123456가나가다"));
+      alert(parseInt("11", 3));
+    </script>
+  </head>
+
+  <body></body>
+</html>

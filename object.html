@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var object = {
+            key1: "자바",
+            key2: 'html\n하와와와와\n우효효효효',
+            key3: 'css',
+        }
+
+        for (let i = 1; i < 4; i++) {
+            alert(object['key' + i]);
+        }
+        for (const key in object) { //for-in 
+            alert(object[key]);
+        }
+        object.key1;
+        object['key1'];
+
+        alert(object['key']); // undefined
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
